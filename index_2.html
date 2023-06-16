@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <main class="principal">
+      <div class="logo">
+        <img src="img/logo.png" alt="" />
+      </div>
+
+      <div class="segunda-col">
+        <!-- textarea -->
+        <div class="texto" id="texto">
+          <textarea
+            placeholder="Ingrese el texto aquí"
+            class="texto-ppal"
+            name="texto-ppal"
+            id="cod"
+            cols="40"
+            rows="10"
+          ></textarea>
+        </div>
+        <!-- advertencia -->
+        <!-- <div class="advertencia">
+          <p>
+            <img src="img/Vector (1).png" alt="" />Solo letras minúsculas y sin
+            acentos
+          </p>
+        </div> -->
+        <!-- botones -->
+        <div class="botones">
+          <input
+            type="button"
+            class="encriptar"
+            value="Encriptar"
+            id="encriptar"
+            onclick="encriptar()"
+          />
+          <input
+            type="button"
+            class="desencriptar"
+            value="Desencriptar"
+            id="desencriptar"
+            onclick="desencriptar()"
+          />
+        </div>
+      </div>
+
+      <div class="tercer-col" id="tercer-col">
+        <div class="contenedor-imagen">
+          <img src="img/Muñeco.png" alt="" />
+        </div>
+        <h1>Ningún mensaje fue encontrado</h1>
+
+        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+      </div>
+    </main>
+    <footer>
+      <p>Desarrollado por Erika Fragomeni - capacitación alura</p>
+    </footer>
+    <script src="js/encrip_2.js"></script>
+  </body>
+</html>
